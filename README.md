@@ -13,6 +13,7 @@
 ####安装nodejs
 
 ####安装grunt
+>如果你安装过yeoman，那么你可以直接运行'@run.bat',观看效果。
 >如果你曾经安装过grunt的老版本请先卸载
 >```
 >$ npm uninstall -g grunt
