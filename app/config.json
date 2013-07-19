@@ -1,0 +1,16 @@
+{
+  "articles":[
+  	{
+      "title": "一步一步深入SSO",
+      "description":"暑假的时候，实验室为了写一个系统集成的项目。我记录下自己学习的脚步。也许有很多曲折，但是我就是喜学习新技术。",
+      "path":"articles/cas-server-1",
+      "tag":["SSO","CAS","spring security"]
+    },
+    {
+      "title": "spring security基于方法级别的权限控制",
+      "description":"暑假的时候，实验室为了写一个系统集成的项目。我记录下自己学习的脚步。也许有很多曲折，但是我就是喜欢学习新技术。",
+      "path":"articles/spring-security-1",
+      "tag":["spring security"]
+    }
+  	]
+}

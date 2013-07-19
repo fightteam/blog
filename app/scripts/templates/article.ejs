@@ -1,0 +1,16 @@
+<div class="type-tag">
+	<ul>
+		<% _.each(tag,function(i){%>
+		<li><a href="#<%=i %> "><%=i %></a></li>
+		<%}) %>
+	</ul>    
+</div>
+
+<header>
+	<h2><%=title %></h2>
+	<p><%=description %></p>
+</header>
+<section class="<%=done ? '' : 'hide'%>">
+
+</section>
+
