@@ -1,3 +1,4 @@
+[apache-license2]:http://www.apache.org/licenses/LICENSE-2.0
 # blog
 
 基于yeoman结构，采用backbone、requirejs、bootstrap、sass等的静态blog。其中包括搜索等等。
