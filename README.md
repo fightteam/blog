@@ -36,11 +36,12 @@
 ## Documentation
 _(Coming soon)_
 
-## Examples
-_(Coming soon)_
+## 例子
+[excalibur's blog](http://excalibur.github.io/)
 
 ## Release History
-0.0.1
+0.0.1——2013.7.10
+0.0.2——2013.7.21
 
 ## License
 Copyright (c) 2013 excalibur 
