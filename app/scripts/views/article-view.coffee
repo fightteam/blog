@@ -38,6 +38,7 @@ define [
 			process markdown 
 		# 获取markdown 文件 
 		getContent:()->
+			@loading()
 			$.ajax
 				url:"#{@model.get('path')}.md"
 				dataType:"text"
@@ -49,6 +50,29 @@ define [
 					# @model.set title:s_title[0]
 					# @model.set description:header[2].substr(s_title[0].length)
 					@model.set content:@process(data)
+		# 自定义loading动画
+		loading:()->
+			@$loading = $ '<div class="progress progress-striped active"><div class="bar" style="width: 0%;"></div></div>'
+			$.ajaxSetup
+				beforeSend:->
+					@$el.append @$loading
+					@$loadingBar = @$loading.find '.bar'
+					@$loadingBar.width 0
+					# 定时调用
+					_this = @
+					@progressValue = 0
+					setInterval ((_this)->    
+						()->
+							_this.progress() 
+					)(@)           
+					,300
+				complete:->	
+					@$loadingBar.width "100%"
+					@$loading.remove()
+		# 增加进度条
+		progress:()->
+			@progressValue = @progressValue%100+10 
+			@$loadingBar.width @progressValue+"%"
 		# 渲染文章						
 		renderMD:()->
 

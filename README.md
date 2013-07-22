@@ -33,15 +33,19 @@
 >
 
 
-## Documentation
-_(Coming soon)_
+## 文档
+主页显示的问文章在`config.json`中配置，path是文章的载入路径。
 
 ## 例子
 [excalibur's blog](http://excalibur.github.io/)
 
+## change log
+0.0.3增加了文章的载入动画
+
 ## Release History
 0.0.1——2013.7.10
 0.0.2——2013.7.21
+0.0.3——2013.7.22
 
 ## License
 Copyright (c) 2013 excalibur 
