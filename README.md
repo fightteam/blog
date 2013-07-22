@@ -40,12 +40,22 @@
 [excalibur's blog](http://excalibur.github.io/)
 
 ## change log
-0.0.3增加了文章的载入动画
+### 0.0.1
+初始化文章
+
+### 0.0.2
+* 完善搜索
+* 增加tag功能
+
+### 0.0.3
+* 增加了文章的载入动画
+* 增加了loaclStorage缓存文章，防止重复读取
 
 ## Release History
 0.0.1——2013.7.10
 0.0.2——2013.7.21
 0.0.3——2013.7.22
+
 
 ## License
 Copyright (c) 2013 excalibur 

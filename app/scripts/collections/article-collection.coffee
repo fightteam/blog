@@ -26,4 +26,8 @@ define [
 		hideAll:()->
 			@each (article)->
 				article.hide()
+		# 设置载入文章
+		setLoading:()->
+			@each (article)->
+				article.loading()
 	ArticleCollection

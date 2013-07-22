@@ -23,6 +23,8 @@ define [
 			@listenTo @model,'change:done',@toggleContent
 			# 监听时候隐藏
 			@listenTo @model,'change:hide',@toggleArticle
+			
+
 		# 渲染
 		render:()->
 			@$el.html @template(@model.toJSON())
@@ -60,7 +62,7 @@ define [
 					@$loadingBar.width 0
 					# 定时调用
 					_this = @
-					@progressValue = 0
+					@progressValue = 25
 					setInterval ((_this)->    
 						()->
 							_this.progress() 
@@ -71,16 +73,16 @@ define [
 					@$loading.remove()
 		# 增加进度条
 		progress:()->
-			@progressValue = @progressValue%100+10 
+			@progressValue = @progressValue%100+25 
 			@$loadingBar.width @progressValue+"%"
 		# 渲染文章						
 		renderMD:()->
-
-		
+			console.log 'a'
 			@$section.append @model.get 'content'
 
 		# 载入文章
 		loadingArticle:()->
+
 			if @model.get 'loading'
 				@getContent()
 				@model.set loading:false

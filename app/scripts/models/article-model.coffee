@@ -23,5 +23,7 @@ define [
             @save hide:true
         show:()->
             @save hide:false
+        loading:()->
+           @save loading:true 
 
     ArticleModel

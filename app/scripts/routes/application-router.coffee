@@ -18,7 +18,7 @@ define [
             
             global.appView = new AppView();
             
-            global.appView.render();
+            global.appView.render(); 
         search:(search)->
             if global.appView is undefined
                 @navigate('/',{trigger: true, replace: true})

@@ -24,8 +24,13 @@ define [
 			@tags = []
 			# 监听文章集合
 			@listenTo global.articles,'add',@addOne
-			this.listenTo global.articles, 'filter', @filterAll
+			# 监听刷新
+			@listenTo global.articles,'reset',@addAll
+
+			@listenTo global.articles,'all',@render
 			global.app.totop = new Backbone.UI.ToTop()
+			global.articles.fetch()
+			
 		render:()->
 			
 			@
@@ -44,6 +49,8 @@ define [
 
 			for tag in u_tags
 				@$menu.append('<li><a href="#'+tag+'">'+tag+'</a></li>')
+		addAll:()->
+			global.articles.each @addOne,@
 		# 搜索
 		search:(key)->
 			
