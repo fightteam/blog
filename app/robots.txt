@@ -1,3 +1,11 @@
 # robotstxt.org
 
 User-agent: *
+Disallow: /bower_components/
+Disallow: /images/
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /images/
+Allow: /articles/
+Allow: /index.html
+

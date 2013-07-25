@@ -17,7 +17,8 @@ define [
         show:()->
             
             global.appView = new AppView();
-            
+            # 显示全部 修复回退bug
+            global.articles.showAll()
             global.appView.render(); 
         search:(search)->
             if global.appView is undefined
