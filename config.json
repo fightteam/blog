@@ -1,0 +1,28 @@
+{
+  "articles":[
+    {
+      "title": "前端mv*模式",
+      "description":"现在前端的技术越来越多，合理的选择才能更好的写出优秀的程序。下面是我学习的心得。",
+      "path":"articles/mvx-1",
+      "tag":["mv*","grunt"]
+    },
+    {
+      "title": "前端mv*模式——todos练习",
+      "description":"以backbone经典例子开始练习，完整的分析。",
+      "path":"articles/mvx-todos",
+      "tag":["mv*","todos","backbone","requirejs","TDD"]
+    },
+    {
+      "title": "spring security基于方法级别的权限控制",
+      "description":"暑假的时候，实验室为了写一个系统集成的项目。我记录下自己学习的脚步。也许有很多曲折，但是我就是喜欢学习新技术。",
+      "path":"articles/spring-security-1",
+      "tag":["spring security"]
+    },
+  	{
+      "title": "一步一步深入SSO",
+      "description":"暑假的时候，实验室为了写一个系统集成的项目。我记录下自己学习的脚步。也许有很多曲折，但是我就是喜学习新技术。",
+      "path":"articles/cas-server-1",
+      "tag":["SSO","CAS","spring security"]
+    }
+  	]
+}
