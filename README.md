@@ -37,7 +37,7 @@
 主页显示的问文章在`config.json`中配置，path是文章的载入路径。
 
 ## 例子
-[excalibur's blog](http://excalibur.github.io/)
+[例子博客](http://fightteam.github.io/blog/)
 
 ## change log
 ### 0.0.1
